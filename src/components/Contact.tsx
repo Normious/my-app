@@ -16,7 +16,8 @@ function Contact() {
             <h3 className="section-title"><span>get in </span> touch</h3>
             <p>Let’s create something amazing together. Send us a message now!</p>
 
-            <form>
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="VITE_WEB3FORMS_ACCESS_KEY"></input>
               <input type="text" placeholder="Your name" spellCheck="false" />
               <input type="text" placeholder="Your email" spellCheck="false" />
               <textarea placeholder="Your message"></textarea>

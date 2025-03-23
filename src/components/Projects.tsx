@@ -28,7 +28,7 @@ function Projects() {
           </div>
         </div>
 
-        <button className="section-btn">See all</button>
+        <button className="section-btn" onClick={() => window.open('https://www.instagram.com/elevate_mw', '_blank')}>See all</button>
       </div>
     </section>
   );

@@ -5,10 +5,13 @@ import App from './App.tsx'
 import './assets/styles.css'
 import './assets/animation.css'
 import './assets/responsive-css.css'
+import { AuthProvider } from './context/AuthContext';
 
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
+    <AuthProvider>
     <App />
+    </AuthProvider>
   </StrictMode>,
 )

@@ -15,8 +15,8 @@ function Hero() {
             <h1 className="main-text">Plant <span>a Tree,</span> Save <span> a Life!</span></h1>
             <h2 className="sub-text">Join us in creating a greener tomorrow, one tree at a time.</h2>
             <div className="hero-cta">
-              <button className="hero-cta-btn btn1">Plant a tree</button>
-              <button className="hero-cta-btn btn2">Learn more</button>
+              <button className="hero-cta-btn btn1" onClick={() => window.open('https://www.instagram.com/elevate_mw', '_blank')}>Plant a tree</button>
+              <button className="hero-cta-btn btn2" onClick={() => window.open('https://www.instagram.com/elevate_mw', '_blank')}>Learn more</button>
             </div>
           </div>
 

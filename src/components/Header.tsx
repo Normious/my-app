@@ -2,11 +2,14 @@ import React from "react";
 import "../assets/styles.css";
 import "../assets/animation.css";
 import "../assets/responsive-css.css";
+import { useAuth } from '../context/AuthContext';
+import { logOut } from '../services/auth';
 
 function Header() {
+  const { currentUser } = useAuth();
   return (
     <header className="header">
-      <a className="head-logo"><span>green</span>future</a>
+      <a className="head-logo"><span>green</span>minds</a>
 
       <nav>
         <a className="nav-items" href="#hero">Home</a>
@@ -17,8 +20,21 @@ function Header() {
       </nav>
 
       <div className="head-cta">
-        <button className="header-cta-btn">Login</button>
-        <button className="header-cta-btn">Be a Partner</button>
+        {currentUser ? (
+          <div>
+            <button className="header-cta-btn" onClick={() => window.location.href = '/Profile'}>
+              Profile
+            </button>
+            <button className="header-cta-btn" onClick={logOut}>
+              Logout
+            </button>
+          </div>
+        ) : (
+          <>
+            <button className="header-cta-btn" onClick={() => window.location.href = '/login'}>Login</button>
+            <button className="header-cta-btn" onClick={() => window.location.href = '/register'}>Register</button>
+          </>
+        )}
       </div>
     </header>
   );

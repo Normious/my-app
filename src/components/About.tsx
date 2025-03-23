@@ -12,9 +12,9 @@ function About() {
           Welcome to our initiative, "Plant Trees, Save the Life!" We are dedicated to creating a greener, healthier planet for everyone.
         </p>
         <p className="p2">
-          At Green Future Project, we organize tree-planting campaigns, collaborate with local communities, and educate people about sustainability.
+          At Green Minds Project, we organize tree-planting campaigns, collaborate with local communities, and educate people about sustainability.
         </p>
-        <button className="section-btn">Learn more</button>
+        <button className="section-btn" onClick={() => window.open('https://www.instagram.com/elevate_mw', '_blank')}>Learn more</button>
         <img src="/images/grass.png" alt="grass" />
       </div>
     </section>

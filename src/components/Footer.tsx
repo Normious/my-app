@@ -10,11 +10,11 @@ function Footer() {
         <div className="social">
           <i className="fa-brands fa-facebook-f"></i>
           <i className="fa-brands fa-twitter"></i>
-          <i className="fa-brands fa-linkedin-in"></i>
+          <i className="fa-brands fa-instagram" onClick={() => window.open('https://www.instagram.com/elevate_mw', '_blank')}></i>
           <i className="fa-brands fa-youtube"></i>
         </div>
 
-<p className="copyright">© GreenFuture {new Date().getFullYear()}</p>
+<p className="copyright">© GreenMinds {new Date().getFullYear()}</p>
       </div>
     </section>
   );
